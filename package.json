@@ -1,0 +1,31 @@
+{
+  "name": "@findaskill/mcp",
+  "version": "1.0.0",
+  "description": "findaskill MCP server — discover skills and MCP servers for your AI agent, without bloating its context.",
+  "type": "module",
+  "bin": {
+    "findaskill-mcp": "./index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "homepage": "https://findaskill.tech",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MEB-TCH/findaskill-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "findaskill",
+    "skills",
+    "claude-code",
+    "cursor",
+    "ai-agent"
+  ]
+}
