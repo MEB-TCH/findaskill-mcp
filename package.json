@@ -4,7 +4,7 @@
   "description": "findaskill MCP server — discover skills and MCP servers for your AI agent, without bloating its context.",
   "type": "module",
   "bin": {
-    "findaskill-mcp": ".index.mjs"
+    "findaskill-mcp": "index.mjs"
   },
   "files": [
     "index.mjs",
