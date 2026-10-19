@@ -8,6 +8,8 @@
 
 [Get your free API key](https://findaskill.tech/settings) · [Documentation](https://findaskill.tech/findaskill-mcp.md) · [Report an issue](https://github.com/MEB-TCH/findaskill-mcp/issues)
 
+<img width="960" height="569" alt="findaskill-demo-github" src="https://github.com/user-attachments/assets/bc74a231-59a6-45b7-82e9-cbfbfcfb75a2" />
+
 ## Why findaskill?
 
 Your coding agent should find relevant capabilities when it needs them—not load dozens of integrations before you start.
