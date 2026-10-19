@@ -8,7 +8,7 @@
 
 [Get your free API key](https://findaskill.tech/settings) · [Documentation](https://findaskill.tech/findaskill-mcp.md) · [Report an issue](https://github.com/MEB-TCH/findaskill-mcp/issues)
 
-<img width="960" height="569" alt="findaskill-demo-github" src="https://github.com/user-attachments/assets/bc74a231-59a6-45b7-82e9-cbfbfcfb75a2" />
+<img width="960" height="569" alt="Claude Code using findaskill to find a Figma to React skill" src="https://github.com/user-attachments/assets/bc74a231-59a6-45b7-82e9-cbfbfcfb75a2" />
 
 ## Why findaskill?
 
@@ -40,6 +40,28 @@ claude mcp add --transport http findaskill https://findaskill.tech/api/public/mc
 ```
 
 Keep your key private. Never commit it to GitHub or include it in a public screenshot.
+
+### Alternative: npm relay
+
+Prefer running findaskill through npm? Add this to your MCP client configuration:
+
+```json
+{
+  "mcpServers": {
+    "findaskill": {
+      "command": "npx",
+      "args": ["-y", "@findaskill/mcp"],
+      "env": {
+        "FINDASKILL_API_KEY": "YOUR_API_KEY"
+      }
+    }
+  }
+}
+```
+
+The relay needs Node.js 18 or newer and no other setup. It forwards requests to the same hosted endpoint.
+
+The npm package `@findaskill/mcp` is being published. Until it is live, use the HTTP connection in step 2.
 
 ### 3. Check the connection
 
@@ -103,13 +125,11 @@ Your findaskill key grants access to findaskill only. Third-party services may r
 
 ## What this repository contains
 
-This public repository is being prepared for the lightweight findaskill MCP relay, connection examples and documentation.
+This repository contains the lightweight findaskill MCP relay (`index.mjs`), connection examples and documentation.
 
 The website, hosted search implementation, catalog infrastructure, administration and agent execution engine are not included.
 
 **The hosted service is required. This is not a self-hosted copy of findaskill.**
-
-The npm relay is planned as `@findaskill/mcp`. Until its publication is confirmed, use the HTTP connection above—no npm package is needed.
 
 ## Privacy and logging
 
